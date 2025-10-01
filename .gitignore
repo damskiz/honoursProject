@@ -1,0 +1,71 @@
+# ----------------------------
+# Python / AI / ML
+# ----------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.sqlite3
+*.egg-info/
+*.env
+*.venv
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+env/
+
+# Machine Learning / AI outputs
+*.h5          # Keras models
+*.pt          # PyTorch models
+*.pkl         # Pickled objects
+*.joblib      # Serialized models
+*.tensorboard/
+
+# Logs and temporary outputs
+*.log
+*.tmp
+*.out
+*.csv         # optional if you don't want raw datasets pushed
+
+# ----------------------------
+# Digital Forensics / Network
+# ----------------------------
+# Wireshark / Packet captures
+*.pcap
+*.pcapng
+
+# Zeek / Bro logs
+*.log
+*.csv
+*.idx
+
+# Plaso / log2timeline outputs
+*.plaso
+*.json
+
+# TCPDUMP captures
+*.dump
+
+# ----------------------------
+# OS / Editor / Misc
+# ----------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.orig
+
+# Git itself (rare)
+.git/
+
+# ----------------------------
+# Secrets / Keys (safety)
+# ----------------------------
+*.pem
+*.key
+*.crt
+*.env
