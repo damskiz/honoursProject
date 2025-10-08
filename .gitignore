@@ -28,7 +28,7 @@ env/
 *.log
 *.tmp
 *.out
-# *.csv         # optional if you don't want raw datasets pushed
+*.csv         # optional if you don't want raw datasets pushed
 
 # ----------------------------
 # Digital Forensics / Network
