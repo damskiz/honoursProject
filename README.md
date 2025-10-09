@@ -1,6 +1,6 @@
 # honoursProject
 
-**Dataset Setup & Initial Exploration**
+08/10/25 - **Dataset Setup & Initial Exploration**
 
 - Added all CIC-IDS2017 CSVs to the /data directory.
 
@@ -19,3 +19,8 @@
 - Save predictions to /results
 
 - Document performance metrics
+
+09/10/25
+- Project scope altered to be more research oriented, 
+putting practical work on ice and priotitising chapter 2 of dissertation,
+gathering recources and research
