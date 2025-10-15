@@ -24,3 +24,12 @@
 - Project scope altered to be more research oriented, 
 putting practical work on ice and priotitising chapter 2 of dissertation,
 gathering recources and research
+
+
+15/10/25
+- IPO revised:
+- Title updated
+- project to be much more research focused
+- focusing on 1 or 2 applications rather than a general "giga ML model" (scope was far too ambitious) 
+- HTTPS/SMTP/general Web-based IDS to cater toward industry adoption
+- dropping forensic timeline to cater for refined scope
