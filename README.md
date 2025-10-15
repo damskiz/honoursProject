@@ -10,7 +10,7 @@
 
 - Confirmed approach: each dataset will be processed individually (load → clean → train → save results), then concatenated for a general IDS evaluation.
 
-**Established next steps:**
+- 
 
 - Clean one dataset (Friday-WorkingHours-Afternoon-DDos)
 
