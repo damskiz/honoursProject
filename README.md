@@ -33,3 +33,7 @@ gathering recources and research
 - focusing on 1 or 2 applications rather than a general "giga ML model" (scope was far too ambitious) 
 - HTTPS/SMTP/general Web-based IDS to cater toward industry adoption
 - dropping forensic timeline to cater for refined scope
+
+16/10/25
+- IPO Revised:
+- scope to detect anomalies such as data exfiltration, injection attacks, DDoS, email phishing and brute force attempts
