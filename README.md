@@ -36,4 +36,4 @@ gathering recources and research
 
 16/10/25
 - IPO Revised:
-- scope to detect anomalies such as data exfiltration, injection attacks, DDoS, email phishing and brute force attempts
+- scope to detect anomalies such as data exfiltration, injection attacks, DDoS, brute force attempts and email phishing if time allows
