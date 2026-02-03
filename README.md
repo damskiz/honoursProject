@@ -1,39 +1,84 @@
-# honoursProject
+# Lightweight ML-Based Intrusion Detection System for SME Networks
 
-08/10/25 - **Dataset Setup & Initial Exploration**
+Honours project developing a machine learning-based IDS tailored for small/medium enterprises, focusing on detecting attacks in HTTPS traffic and DDoS scenarios.
 
-- Added all CIC-IDS2017 CSVs to the /data directory.
+## Project Overview
 
-- Created initial notebook: notebooks/01_explore_dataset.ipynb for dataset inspection.
+This project aims to design, implement, and evaluate a lightweight intrusion detection system that applies ML techniques to detect anomalous traffic within SME networks, with emphasis on:
+- DDoS attack detection
+- Brute force attempts
+- Resource-efficient deployment for constrained environments
+- HTTPS anomaly detection (without decryption)
 
-- Verified that all files load correctly and display basic structure (df.info(), df.columns, df[' Label'].value_counts()).
+## Setup
 
-- Confirmed approach: each dataset will be processed individually (load → clean → train → save results), then concatenated for a general IDS evaluation.
+### Prerequisites
+- Python 3.12+
+- Ubuntu/WSL recommended
 
-- 
+### Installation
+```bash
+# Clone the repository
+git clone git@github.com:damskiz/honoursProject.git
+cd honoursProject
 
-- Clean one dataset (Friday-WorkingHours-Afternoon-DDos)
+# Create virtual environment
+python3 -m venv venv
+source venv/bin/activate
 
-- Train a baseline RandomForest model
+# Install dependencies
+pip install pandas numpy matplotlib scikit-learn
+```
 
-- Save predictions to /results
+## Project Structure
+```
+honoursProject/
+├── data/
+│   ├── raw/              # Original datasets (not in git)
+│   └── processed/        # Cleaned datasets
+├── scripts/              # Python scripts for data processing and training
+├── notebooks/            # Jupyter notebooks for exploration
+├── models/               # Trained model files
+├── results/              # Output metrics, plots, reports
+└── docs/                 # Documentation and dissertation chapters
+```
 
-- Document performance metrics
+## Datasets
 
-09/10/25
-- Project scope altered to be more research oriented, 
-putting practical work on ice and priotitising chapter 2 of dissertation,
-gathering recources and research
+- **CIC-IDS2017**: Modern attack scenarios with TLS flows
+- **UNSW-NB15**: Diverse attack categories with realistic traffic
 
+*Datasets not included in repository due to size. Download from:*
+- CIC-IDS2017: https://www.unb.ca/cic/datasets/ids-2017.html
+- UNSW-NB15: https://research.unsw.edu.au/projects/unsw-nb15-dataset
 
-15/10/25
-- IPO revised:
-- Title updated
-- project to be much more research focused
-- focusing on 1 or 2 applications rather than a general "giga ML model" (scope was far too ambitious) 
-- HTTPS/SMTP/general Web-based IDS to cater toward industry adoption
-- dropping forensic timeline to cater for refined scope
+## Usage
+```bash
+# Activate virtual environment
+source venv/bin/activate
 
-16/10/25
-- IPO Revised:
-- scope to detect anomalies such as data exfiltration, injection attacks, DDoS, brute force attempts and email phishing if time allows
+# Run data exploration
+python scripts/explore.py
+
+# (More scripts to be added as project develops)
+```
+
+## Current Status
+
+- [x] Environment setup
+- [x] Dataset acquisition (CIC-IDS2017)
+- [x] Initial data exploration
+- [ ] Data preprocessing and cleaning
+- [ ] Feature selection
+- [ ] Model training and evaluation
+- [ ] Testbed deployment
+
+## Author
+
+Damian Wright  
+Honours Project - SOC10101  
+Edinburgh Napier University
+
+## License
+
+Academic project - not for commercial use
