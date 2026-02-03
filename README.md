@@ -1,6 +1,6 @@
 # Lightweight ML-Based Intrusion Detection System for SME Networks
 
-Honours project developing a machine learning-based IDS tailored for small/medium enterprises, focusing on detecting attacks in HTTPS traffic and DDoS scenarios.
+Honours project developing a machine learning-based IDS tailored for small/medium enterprises, focusing on detecting attacks in HTTPS traffic, DDoS scenarios and brute force attacks.
 
 ## Project Overview
 
