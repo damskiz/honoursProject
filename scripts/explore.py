@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load just the first 1000 rows to peek
-df = pd.read_csv('datasets/raw/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv', nrows=1000)
+df = pd.read_csv('data/raw/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv', nrows=1000)
 
 print("Shape:", df.shape)
 print("\nColumns:", df.columns.tolist())
