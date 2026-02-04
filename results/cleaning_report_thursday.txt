@@ -1,0 +1,20 @@
+DATA CLEANING REPORT
+============================================================
+
+Original rows: 170,366
+Final rows: 164,179
+Removed: 6,187 (3.63%)
+
+Steps taken:
+1. Stripped whitespace from column names
+2. Replaced 250 infinity values
+3. Dropped rows with NaN values
+4. Removed duplicate rows
+
+Final class distribution:
+Label
+BENIGN                        162036
+Web Attack � Brute Force        1470
+Web Attack � XSS                 652
+Web Attack � Sql Injection        21
+Name: count, dtype: int64

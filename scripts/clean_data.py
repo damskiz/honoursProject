@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 print("Loading dataset...")
-df = pd.read_csv('data/raw/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv')
+df = pd.read_csv('data/raw/Tuesday-WorkingHours.pcap_ISCX.csv')
 original_size = df.shape[0]
 
 print(f"Original dataset: {original_size:,} rows")
@@ -45,12 +45,12 @@ print(df['Label'].value_counts(normalize=True) * 100)
 print("\n" + "="*60)
 print("SAVING CLEANED DATASET")
 print("="*60)
-output_path = 'data/processed/cleaned_friday_ddos.csv'
+output_path = 'data/processed/cleaned_tuesday_brute.csv'
 df.to_csv(output_path, index=False)
 print(f"✓ Saved to: {output_path}")
 
 # 7. Save cleaning report
-with open('results/cleaning_report.txt', 'w') as f:
+with open('results/cleaning_report_tuesday.txt', 'w') as f:
     f.write("DATA CLEANING REPORT\n")
     f.write("="*60 + "\n\n")
     f.write(f"Original rows: {original_size:,}\n")

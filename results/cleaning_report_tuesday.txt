@@ -1,0 +1,19 @@
+DATA CLEANING REPORT
+============================================================
+
+Original rows: 445,909
+Final rows: 421,626
+Removed: 24,283 (5.45%)
+
+Steps taken:
+1. Stripped whitespace from column names
+2. Replaced 327 infinity values
+3. Dropped rows with NaN values
+4. Removed duplicate rows
+
+Final class distribution:
+Label
+BENIGN         412476
+FTP-Patator      5931
+SSH-Patator      3219
+Name: count, dtype: int64
