@@ -69,7 +69,7 @@ python scripts/explore.py
 - [x] Dataset acquisition (CIC-IDS2017)
 - [x] Initial data exploration
 - [ ] Data preprocessing and cleaning
-- [ ] Feature selection
+- [ ] Feature prep & selection 
 - [ ] Model training and evaluation
 - [ ] Testbed deployment
 
