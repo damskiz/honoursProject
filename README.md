@@ -75,7 +75,7 @@ python scripts/explore.py
 
 ## Author
 
-Damian Wright  
+Adam Wright  
 Honours Project - SOC10101  
 Edinburgh Napier University
 
