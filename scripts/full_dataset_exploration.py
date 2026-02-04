@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 print("Loading full dataset...")
-df = pd.read_csv('data/raw/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv')
+df = pd.read_csv('data/raw/Tuesday-WorkingHours.pcap_ISCX.csv')
 
 print("="*60)
 print("FULL DATASET EXPLORATION")
@@ -47,8 +47,8 @@ print("SUMMARY SAVED")
 print("="*60)
 
 # Save distribution to file
-with open('results/full_dataset_summary.txt', 'w') as f:
-    f.write(f"Dataset: Friday-WorkingHours-Afternoon-DDos\n")
+with open('results/full_dataset_summary_tuesday.txt', 'w') as f:
+    f.write(f"Dataset: Tuesday-WorkingHours-brute\n")
     f.write(f"Shape: {df.shape}\n\n")
     f.write("Class Distribution:\n")
     f.write(str(df[' Label'].value_counts()))

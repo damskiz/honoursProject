@@ -1,0 +1,18 @@
+Dataset: Thursday-WorkingHours-Morning-WebAttacks
+Shape: (170366, 79)
+
+Class Distribution:
+ Label
+BENIGN                        168186
+Web Attack � Brute Force        1507
+Web Attack � XSS                 652
+Web Attack � Sql Injection        21
+Name: count, dtype: int64
+
+Percentages:
+ Label
+BENIGN                        98.720402
+Web Attack � Brute Force       0.884566
+Web Attack � XSS               0.382705
+Web Attack � Sql Injection     0.012326
+Name: proportion, dtype: float64

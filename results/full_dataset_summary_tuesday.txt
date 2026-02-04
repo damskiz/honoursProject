@@ -1,0 +1,16 @@
+Dataset: Tuesday-WorkingHours-brute
+Shape: (445909, 79)
+
+Class Distribution:
+ Label
+BENIGN         432074
+FTP-Patator      7938
+SSH-Patator      5897
+Name: count, dtype: int64
+
+Percentages:
+ Label
+BENIGN         96.897349
+FTP-Patator     1.780184
+SSH-Patator     1.322467
+Name: proportion, dtype: float64
