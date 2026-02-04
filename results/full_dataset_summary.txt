@@ -1,0 +1,14 @@
+Dataset: Friday-WorkingHours-Afternoon-DDos
+Shape: (225745, 79)
+
+Class Distribution:
+ Label
+DDoS      128027
+BENIGN     97718
+Name: count, dtype: int64
+
+Percentages:
+ Label
+DDoS      56.713105
+BENIGN    43.286895
+Name: proportion, dtype: float64

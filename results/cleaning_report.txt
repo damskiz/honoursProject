@@ -1,0 +1,18 @@
+DATA CLEANING REPORT
+============================================================
+
+Original rows: 225,745
+Final rows: 223,082
+Removed: 2,663 (1.18%)
+
+Steps taken:
+1. Stripped whitespace from column names
+2. Replaced 64 infinity values
+3. Dropped rows with NaN values
+4. Removed duplicate rows
+
+Final class distribution:
+Label
+DDoS      128014
+BENIGN     95068
+Name: count, dtype: int64
