@@ -28,13 +28,7 @@ env/
 *.log
 *.tmp
 *.out
-
-# ----------------------------
-# Datasets (backed up to OneDrive)
-# ----------------------------
-*.csv
-data/raw/
-data/processed/
+*.csv         # optional if you don't want raw datasets pushed
 
 # ----------------------------
 # Digital Forensics / Network
@@ -44,6 +38,8 @@ data/processed/
 *.pcapng
 
 # Zeek / Bro logs
+*.log
+*.csv
 *.idx
 
 # Plaso / log2timeline outputs
@@ -62,6 +58,9 @@ Thumbs.db
 *.swo
 *.bak
 *.orig
+
+# Git itself (rare)
+.git/
 
 # ----------------------------
 # Secrets / Keys (safety)
