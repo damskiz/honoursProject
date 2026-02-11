@@ -68,8 +68,8 @@ python scripts/explore.py
 - [x] Environment setup
 - [x] Dataset acquisition (CIC-IDS2017)
 - [x] Initial data exploration
-- [ ] Data preprocessing and cleaning
-- [ ] Feature prep & selection 
+- [x] Data preprocessing and cleaning
+- [x] Feature prep & selection 
 - [ ] Model training and evaluation
 - [ ] Testbed deployment
 
