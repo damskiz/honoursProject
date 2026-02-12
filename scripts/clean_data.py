@@ -1,36 +1,38 @@
 import pandas as pd
 import numpy as np
 
+# load dataset and store number of rows before cleaning
 print("Loading dataset...")
 df = pd.read_csv('data/raw/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv')
 original_size = df.shape[0]
 
+
 print(f"Original dataset: {original_size:,} rows")
 
-# 1. Strip whitespace from column names
+# 1. strip whitespace from column names
 print("\n1. Fixing column names...")
 df.columns = df.columns.str.strip()
 print("✓ Column names cleaned")
 
-# 2. Replace infinity values with NaN
+# 2.check & replace infinity values with NaN
 print("\n2. Handling infinity values...")
-inf_before = df.isin([np.inf, -np.inf]).sum().sum()
+inf_before = df.isin([np.inf, -np.inf]).sum().sum() # check how many infinity values before replacing
 df = df.replace([np.inf, -np.inf], np.nan)
 print(f"✓ Replaced {inf_before} infinity values with NaN")
 
-# 3. Drop rows with missing values
+# 3. count NaN values and drop rows with any NaN values
 print("\n3. Removing rows with missing values...")
-nan_count = df.isnull().sum().sum()
+nan_count = df.isnull().sum().sum() # count total NaN values before dropping
 df = df.dropna()
 print(f"✓ Removed {original_size - df.shape[0]} rows with missing/infinity values")
 
-# 4. Remove duplicates
+# 4. remove duplicate rtraffic flows / rows
 print("\n4. Removing duplicate rows...")
-df = df.drop_duplicates()
-dup_removed = original_size - nan_count - df.shape[0]
+df = df.drop_duplicates() 
+dup_removed = original_size - nan_count - df.shape[0] 
 print(f"✓ Removed {dup_removed} duplicate rows")
 
-# 5. Verify class distribution still good
+# 5. verify class distribution still good & show distribution as %
 print("\n" + "="*60)
 print("CLEANED DATASET SUMMARY")
 print("="*60)
@@ -41,7 +43,7 @@ print(df['Label'].value_counts())
 print(f"\nPercentages:")
 print(df['Label'].value_counts(normalize=True) * 100)
 
-# 6. Save cleaned dataset
+# 6. save cleaned dataset
 print("\n" + "="*60)
 print("SAVING CLEANED DATASET")
 print("="*60)
@@ -49,7 +51,7 @@ output_path = 'data/processed/cleaned_friday_ddos.csv'
 df.to_csv(output_path, index=False)
 print(f"✓ Saved to: {output_path}")
 
-# 7. Save cleaning report
+# 7. save cleaning report
 with open('results/cleaning_report_friday_ddos.txt', 'w', encoding='utf-8') as f:
     f.write("DATA CLEANING REPORT\n")
     f.write("="*60 + "\n\n")
